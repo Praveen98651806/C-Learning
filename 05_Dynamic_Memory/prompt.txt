@@ -1,0 +1,62 @@
+Create a detailed and well-structured document on "Dynamic Memory Allocation in C" designed for beginners to expert-level learners.
+
+Requirements:
+
+1. Start with basic concepts:
+   - What is memory in C?
+   - Difference between static and dynamic memory allocation
+   - Stack vs Heap memory (clear explanation with diagrams)
+
+2. Explain dynamic memory allocation step by step:
+   - Why dynamic memory allocation is needed
+   - Introduction to heap memory
+   - Syntax and usage of:
+     - malloc()
+     - calloc()
+     - realloc()
+     - free()
+
+3. Provide clear examples:
+   - Simple programs using malloc and free
+   - Difference between malloc and calloc with examples
+   - Dynamic arrays and resizing using realloc
+
+4. Intermediate concepts:
+   - Memory leaks (what, why, how to avoid)
+   - Dangling pointers
+   - NULL pointer handling
+   - Best practices for safe memory usage
+
+5. Advanced topics:
+   - Allocation for structures and pointers
+   - Double pointers and dynamic 2D arrays
+   - Fragmentation (internal vs external)
+   - Alignment and padding basics
+   - Real-world usage in systems programming
+
+6. Include:
+   - Memory diagrams showing stack vs heap
+   - Step-by-step memory allocation visuals
+   - Code snippets with proper explanations
+   - Common mistakes students make
+
+7. Add a comparison table:
+   - malloc vs calloc vs realloc vs static allocation
+
+8. Include debugging and tools:
+   - How to debug memory issues (valgrind basics)
+   - Common errors and how to detect them
+
+9. Provide summary and quick revision notes:
+   - Key points
+   - Important interview questions
+
+10. Make the document:
+   - Simple and easy to understand initially
+   - Gradually move into deeper and expert-level concepts
+   - Use clean formatting (headings, bullet points, examples)
+
+Output format:
+- Use Markdown formatting
+- Include headings, subheadings, code blocks, and diagrams (ASCII if needed)
+- Ensure clarity, progression, and completeness

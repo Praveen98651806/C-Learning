@@ -1,0 +1,96 @@
+
+Create a comprehensive, well-structured document on "Linux Memory Management" that progresses from beginner fundamentals to expert-level internals. The content must be deeply technical, precise, and suitable for engineers preparing for kernel-level work, system design, or performance tuning.
+
+Follow this structure:
+
+1. INTRODUCTION
+   - What is memory management in an OS
+   - Why it matters (performance, isolation, efficiency)
+
+2. BASIC CONCEPTS (Beginner Level)
+   - Physical vs Virtual Memory
+   - Address space layout (user vs kernel space)
+   - Paging basics
+   - Page size, frames
+   - Role of MMU and TLB
+
+3. PROCESS MEMORY LAYOUT
+   - Stack, heap, data, bss, text segments
+   - mmap regions
+   - Example memory map of a Linux process
+
+4. PAGING AND VIRTUAL MEMORY (Intermediate)
+   - Page tables (multi-level)
+   - Page faults (minor vs major)
+   - Demand paging
+   - Copy-on-write (COW)
+   - Swapping and swap space
+
+5. LINUX-SPECIFIC MEMORY MANAGEMENT
+   - Buddy allocator
+   - Slab / SLUB / SLOB allocators
+   - kmalloc vs vmalloc
+   - Zone architecture (DMA, Normal, HighMem)
+   - NUMA basics
+
+6. KERNEL MEMORY MANAGEMENT
+   - Kernel virtual address space
+   - Direct mapping
+   - High memory handling
+   - Per-CPU memory
+
+7. ADVANCED CONCEPTS
+   - Page cache
+   - Buffer cache vs page cache
+   - Transparent Huge Pages (THP)
+   - HugeTLB
+   - Memory overcommit
+   - OOM killer (how it works)
+
+8. PERFORMANCE & TUNING
+   - vm.swappiness
+   - vm.overcommit_memory
+   - Page reclaim (LRU lists, active/inactive)
+   - Dirty pages and writeback
+   - Tools: free, top, vmstat, smaps, /proc, perf
+
+9. DEBUGGING & OBSERVABILITY
+   - /proc/meminfo analysis
+   - strace and page faults
+   - perf memory analysis
+   - slabtop, pmap
+
+10. EXPERT / KERNEL INTERNALS
+   - struct page
+   - mm_struct and vm_area_struct (VMA)
+   - Page reclaim internals
+   - Reverse mapping (rmap)
+   - Memory compaction
+   - Kswapd and direct reclaim
+   - Fault handling flow in kernel
+
+11. REAL-WORLD SCENARIOS
+   - Memory leak detection
+   - High swap usage diagnosis
+   - OOM debugging case study
+
+12. DIAGRAMS (text-based or ASCII)
+   - Virtual memory layout
+   - Page table hierarchy
+   - Buddy allocator visualization
+
+13. BEST PRACTICES
+   - Writing memory-efficient applications
+   - Choosing malloc vs mmap
+   - Avoiding fragmentation
+
+Constraints:
+- Use clear headings and subheadings
+- Include diagrams (ASCII where needed)
+- Add real examples (commands/code)
+- Progressively increase difficulty
+- Do NOT skip low-level details
+- Include kernel-level explanations wherever relevant
+
+Output should read like a professional engineering guide or internal system design document.
+
